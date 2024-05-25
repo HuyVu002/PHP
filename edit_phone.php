@@ -29,11 +29,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Phone Number</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <?php include_once("html/styles.php")?>
 </head>
 <body>
-    <div class="container">
+    <div style="background-color: #79a6d2; padding: 30px; border-radius:20px" class="container">
         <h1>Edit phone number</h1>
     <form action="/update_phone.php?id=<?php echo $id;?>" method="post">
         <div class="mb-3">
@@ -52,7 +51,7 @@
             <label class="form-label">Email</label>
             <input value="<?php echo $product["email"]; ?>"  type="email" name="email" class="form-control" >
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-dark">Submit</button>
     </form>
     </div>
 </body>
