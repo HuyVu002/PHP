@@ -8,10 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div style="width: 25%; background-color:#79a6d2; padding:20px; border-radius:10px" class="container mt-5">
         <h1>Add a new number</h1>
     <form action="/save_number.php" method="post">
-        <div class="mb-3">
+        <div class="mb-3 mt-3">
             <label class="form-label">Name</label>
             <input type="text" name="name" class="form-control" placeholder="fully name">
         </div>
@@ -27,7 +27,7 @@
             <label class="form-label">Email</label>
             <input type="email" name="email" class="form-control" placeholder="example@example.com">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-dark">Save</button>
     </form>
     </div>
 </body>
