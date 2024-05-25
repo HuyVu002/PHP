@@ -3,7 +3,7 @@ function connect(){
     $host = "127.0.0.1";
     $user = "root";
     $pwd = "root";
-    $db = "php_demo";
+    $db = "book_phone";
     $conn = new mysqli($host,$user,$pwd,$db);
     if($conn->connect_error)
         die("Connect refused!");
